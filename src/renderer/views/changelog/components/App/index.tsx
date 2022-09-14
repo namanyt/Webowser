@@ -74,23 +74,15 @@ export default observer(() => {
 
 
       <StyledSection className="banner1">
-        <Description>Webowser has been updated!</Description>
+        <Description>Webowser</Description>
         <Title>Press Start to continue!</Title>
         <Button theme={store.theme} onClick={nextPage}>Start!</Button>
       </StyledSection>
 
       <StyledSection className="banner2">
         <Favicon></Favicon>
-        <Description style={{fontSize: "1.5rem", fontWeight: 500, margin: 0, marginBottom: "48px", opacity: '1' }}>What has been changed?</Description>
-        <Description>Introducing Webowser Bug Fix Update (v10.0.2)</Description>
-        <Description>- Bug fixing the extension button.</Description>
-        <Description>- Introducing our new permission system.</Description>
-        <Description>- Minor Visual Changes</Description>
-        <Description>- Rewriting Our Zoom System</Description>
-        <Description>- Patching Tab Grouping and Bookmarks</Description>
-        <Description>- Rewriting Our Download System</Description>
-        <Description>- Options to clear certain Webowser databases</Description>
-        <Description>Much much more!</Description>
+        <Description>Introducing Webowser (v1.0.0)</Description>
+        <Description>- Naman's webowser 🙂.</Description>
         <div style={{ width: '500px', display: 'flex', justifyContent: 'flex-end', marginTop: '3rem' }}>
           <ExtraStyledButton
           background="rgb(138, 180, 248)"
@@ -106,7 +98,7 @@ export default observer(() => {
       </StyledSection>
 
        <StyledSection className="banner3">
-        <Favicon></Favicon>
+        <Favicon></Favicon> 
         <Title>Webowser Setup</Title>
         <Description style={{fontSize: "1.5rem", fontWeight: 500, margin: 0, marginBottom: "48px", opacity: '1' }}>For maximum privacy, set Webowser as your default browser! Press the Start button to upgrade Webowser's database and start browsing!</Description>
         <div style={{ display: 'flex', width: "15%", justifyContent: "space-around" }}>
@@ -120,14 +112,6 @@ export default observer(() => {
               Start using Webowser!
             </div>
           </ExtraStyledButton>
-      </StyledSection>
-
-      <StyledSection className="banner4">
-        <Description>Webowser is the new privacy orientated browser!</Description>
-        <Title>Inbuilt adblocker and more, lets start.</Title>
-        <p></p>
-        <Description>Please ignore the dialogs that popup upon updating. Pressing "Start Browsing" will erase your favicon and permission database to support our latest versions.</Description>
-        <Button theme={store.theme} onClick={commit}>Start Browsing</Button>
       </StyledSection>
     </ThemeProvider>
   );
