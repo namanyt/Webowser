@@ -10,7 +10,6 @@ import {
   Close,
   HiddenDiv,
 } from './style';
-import { FAVICON as favicon } from '~/renderer/constants/icons';
 import * as os from 'os';
 import { ipcRenderer } from 'electron';
 import { ICON_CLOSE } from '~/renderer/constants/icons';
@@ -62,7 +61,7 @@ export const DefaultBrowser = observer(() => {
           >
             <div
               style={{
-                background: `url(https://astian.org/icon.png)`,
+                background: `url(static/icons/icon.png)`,
                 width: '21px',
                 height: '21px',
                 backgroundSize: 'cover',

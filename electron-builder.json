@@ -4,6 +4,14 @@
   "nsis": {
     "include": "static/installer.nsh"
   },
+  "nsisWeb": {
+    "oneClick": false,
+    "allowElevation": true,
+    "installerIcon": "static/icons/icon.ico",
+    "artifactName": "${productName} Installer.${ext}",
+    "createStartMenuShortcut": true,
+    "shortcutName": "Webowser"
+  },
   "generateUpdatesFilesForAllChannels": true,
   "asar": true,
   "directories": {

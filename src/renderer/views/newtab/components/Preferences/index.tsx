@@ -124,15 +124,6 @@ export const Preferences = observer(() => {
           >
             Inspirational
           </ContextMenuItem>
-           <ContextMenuItem
-            bigger
-            onClick={onPresetClick('informational')}
-            selected={store.preset === 'informational'}
-            iconSize={28}
-            icon={ICON_WINDOW}
-          >
-            Informational
-          </ContextMenuItem>
           <ContextMenuItem
             bigger
             selected={store.preset === 'custom'}

@@ -31,8 +31,7 @@
     "deploy": "npm run build && electron-builder build --win --linux appimage snap --publish never",
     "lint": "eslint \"src/**/*.ts*\" \"src/**/*.tsx*\"",
     "lint-fix": "eslint \"src/**/*.ts*\" \"src/**/*.tsx*\" --fix",
-    "rebuild": "electron-builder install-app-deps",
-    "copyright": "copyright-header --templateId minimal --forceModificationYear 2022 --fix --copyrightHolder Astian, Inc --include src"
+    "rebuild": "electron-builder install-app-deps"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
@@ -112,6 +111,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.0.0-beta2",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "electron-chrome-extensions": "^3.8.0",
+    "exe-icon-extractor": "^1.0.8",
+    "global": "^4.4.0",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "postinstall-postinstall": "^2.1.0",
     "react-query": "^3.34.13",
