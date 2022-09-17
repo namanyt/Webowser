@@ -79,8 +79,8 @@ const themeset = (mode: string) => {
 }
 
 const commit = () => {
-  store.settings.notnew = "false"
-  store.settings.changelog = "1.0.0"
+  store.settings.notnew = false
+  store.settings.changelog = "1.0.1"
   store.save()
   window.location.replace(getWebUIURL('newtab'))
 }

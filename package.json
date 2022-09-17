@@ -1,6 +1,6 @@
 {
   "name": "webowser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sideEffects": false,
   "description": "Webowser a lightweight, fast and free web browser for Windows, Linux and MacOS",
   "keywords": [

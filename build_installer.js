@@ -13,7 +13,7 @@ const msiCreator = new MSICreator({
   name: 'Webowser',
   manufacturer: 'Cider Boi',
 
-  version: '1.0.0',
+  version: '1.0.1',
   appIconPath: path.resolve(__dirname, './static/icons/icon.ico'),
   shortcutName: 'Webowser',
   shortName: 'Webowser',

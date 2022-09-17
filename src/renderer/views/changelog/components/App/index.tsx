@@ -81,7 +81,7 @@ export default observer(() => {
 
       <StyledSection className="banner2">
         <Favicon></Favicon>
-        <Description>Introducing Webowser (v1.0.0)</Description>
+        <Description>Introducing Webowser (v1.0.1)</Description>
         <Description>- Naman's webowser 🙂.</Description>
         <div style={{ width: '500px', display: 'flex', justifyContent: 'flex-end', marginTop: '3rem' }}>
           <ExtraStyledButton
