@@ -1,5 +1,6 @@
 const { MSICreator } = require("electron-wix-msi");
 const path = require("path");
+const packageJSON = require('./package.json');
 
 const APP_DIR = path.resolve(__dirname, './dist/win-unpacked');
 const OUT_DIR = path.resolve(__dirname, './dist/installer');
@@ -8,18 +9,18 @@ const msiCreator = new MSICreator({
   appDirectory: APP_DIR,
   outputDirectory: OUT_DIR,
   
-  description: 'Webowser a lightweight, fast and free web browser for Windows, Linux and MacOS',
-  exe: 'Webowser',
-  name: 'Webowser',
-  manufacturer: 'Cider Boi',
+  description: packageJSON.description,
+  exe: packageJSON.name,
+  name: packageJSON.name,
+  manufacturer: packageJSON.author,
 
-  version: '1.0.1',
+  version: packageJSON.version,
   appIconPath: path.resolve(__dirname, './static/icons/icon.ico'),
-  shortcutName: 'Webowser',
-  shortName: 'Webowser',
-  shortcutFolderName: 'Cider Boi',
+  shortcutName: packageJSON.name,
+  shortName: packageJSON.name,
+  shortcutFolderName: packageJSON.author,
   bundled: true,
-  // appUserModelId: 'xyz.ciderboi.webowser',
+  appUserModelId: 'webowser.Webowser',
   
   features: {
     autoLaunch: true,
