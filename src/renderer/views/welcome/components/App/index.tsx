@@ -21,6 +21,7 @@ import {
 } from './style';
 import { getWebUIURL } from '~/common/webui';
 import { StyledButton } from '~/renderer/components/Button/styles';
+import { VERSION } from '~/constants';
 
 let page = 1
 let theme = "Dark"
@@ -80,7 +81,7 @@ const themeset = (mode: string) => {
 
 const commit = () => {
   store.settings.notnew = false
-  store.settings.changelog = "1.0.1"
+  store.settings.changelog = VERSION
   store.save()
   window.location.replace(getWebUIURL('newtab'))
 }
